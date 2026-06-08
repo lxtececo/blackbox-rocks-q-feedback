@@ -1,0 +1,48 @@
+name: Feature request
+description: Suggest a new feature or improvement for BLACKBOX.ROCKS |ψ⟩ Q.
+title: "[Feature] "
+labels: ["enhancement", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the suggestion for
+        **BLACKBOX.ROCKS |ψ⟩ Q — Quantum Full Platform Optimizer**.
+        We track every accepted feature on the
+        [public roadmap](https://quantumfpo.staging.blackbox.rocks/docs/roadmap)
+        and slot work into the four-week demo cadence.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: Describe the user pain point, not the proposed implementation.
+      placeholder: "As a pro user managing 50 portfolios I can't tell which optimisation jobs are still running because…"
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: What should the UI / API / behaviour look like?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives you've considered
+      description: Other ways this problem could be solved, including what you currently work around with.
+  - type: dropdown
+    id: priority
+    attributes:
+      label: How important is this to you?
+      options:
+        - "Nice to have"
+        - "Useful — would help my workflow"
+        - "Blocking — I can't ship without this"
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Links to related discussions, screenshots, mock-ups, or anything else.

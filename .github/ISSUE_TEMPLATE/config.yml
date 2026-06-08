@@ -1,0 +1,17 @@
+blank_issues_enabled: false
+contact_links:
+  - name: In-app feedback (no GitHub account needed)
+    url: https://quantumfpo.staging.blackbox.rocks/
+    about: Click "Send feedback" in the footer of any page in BLACKBOX.ROCKS |ψ⟩ Q.
+  - name: Security disclosure
+    url: mailto:security@blackbox.rocks
+    about: Report security issues privately — DO NOT open a public issue.
+  - name: Enterprise / commercial / confidential feedback
+    url: mailto:feedback@blackbox.rocks
+    about: For anything that can't go in a public issue (tenant data, commercial discussions, NDAs).
+  - name: Discussions
+    url: https://github.com/lxtececo/blackbox-rocks-q-feedback/discussions
+    about: Open-ended ideas, RFCs, "how do you all…" questions about BLACKBOX.ROCKS |ψ⟩ Q.
+  - name: BLACKBOX.ROCKS website
+    url: https://blackbox.rocks
+    about: Company website — products, pricing, contact.

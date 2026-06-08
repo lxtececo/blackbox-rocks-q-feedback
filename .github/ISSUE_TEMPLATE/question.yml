@@ -1,0 +1,28 @@
+name: Question
+description: Ask how something works in BLACKBOX.ROCKS |ψ⟩ Q, or get help with integration.
+title: "[Question] "
+labels: ["question", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before opening an issue, please check:
+
+        - The [user guide](https://quantumfpo.staging.blackbox.rocks/docs/intro).
+        - The [release notes](https://quantumfpo.staging.blackbox.rocks/docs/release-notes).
+        - Existing [Discussions](https://github.com/lxtececo/blackbox-rocks-q-feedback/discussions).
+
+        For open-ended discussion (vs. a concrete question), prefer the
+        Discussions tab.
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      description: Be as specific as you can. Include what you've already tried.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: What are you trying to accomplish? Which environment / version?

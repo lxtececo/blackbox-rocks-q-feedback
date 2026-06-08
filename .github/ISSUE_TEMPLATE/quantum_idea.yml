@@ -1,0 +1,37 @@
+name: Quantum-method / algorithm idea
+description: Propose a new optimiser, error-mitigation technique, or quantum backend for BLACKBOX.ROCKS |ψ⟩ Q.
+title: "[Quantum] "
+labels: ["quantum-idea", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **BLACKBOX.ROCKS |ψ⟩ Q** ships a Quantum Algorithm Platform (QAP)
+        abstraction that already covers IBM Qiskit, Cirq, IonQ, D-Wave, QCI
+        and CUDA-Q backends. New methods and providers are very welcome.
+  - type: input
+    id: method
+    attributes:
+      label: Method / algorithm / provider name
+      placeholder: "e.g. QAOA-WS, NFT, AQS-CDQE, Pasqal, Atom Computing…"
+    validations:
+      required: true
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Why is this worth adding?
+      description: What problem class does it solve, what's the published benchmark, why now?
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: arXiv links, vendor docs, benchmark papers.
+    validations:
+      required: true
+  - type: textarea
+    id: fit
+    attributes:
+      label: How does it fit our QAP abstraction?
+      description: Adapter outline, hardware availability, classical pre/post-processing, expected diagnostic artifacts.

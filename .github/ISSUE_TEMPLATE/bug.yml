@@ -1,0 +1,72 @@
+name: Bug report
+description: Something in BLACKBOX.ROCKS |ψ⟩ Q is broken or behaving unexpectedly.
+title: "[Bug] "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug in
+        **BLACKBOX.ROCKS |ψ⟩ Q — Quantum Full Platform Optimizer**.
+        The more concrete you can be, the faster we can reproduce and fix.
+
+        **Do not include** raw market data, credentials, API keys, or any
+        tenant-confidential information in this public issue. Use the
+        in-app **Send feedback** button (footer) or email
+        [feedback@blackbox.rocks](mailto:feedback@blackbox.rocks) instead.
+  - type: input
+    id: app-version
+    attributes:
+      label: App version
+      description: Visible in the bottom-left footer of the app (e.g. v0.2.1-alpha).
+      placeholder: "v0.2.1-alpha"
+    validations:
+      required: true
+  - type: dropdown
+    id: env
+    attributes:
+      label: Environment
+      options:
+        - "Staging (quantumfpo.staging.blackbox.rocks)"
+        - "Production (app.quantumfpo.com)"
+        - "Self-hosted"
+        - "Other / unsure"
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: A clear, concise description of the behaviour.
+      placeholder: "When I clicked X, the modal showed Y instead of Z."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Numbered steps from a known starting state.
+      placeholder: |
+        1. Sign in as a `pro` user.
+        2. Open Optimisation panel.
+        3. Select method "Quantum QAOA".
+        4. Click Run.
+        5. Observe error in the result card.
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots / logs
+      description: Drag and drop screenshots here. Paste any error messages from the browser console or network tab. Redact any sensitive data.
+  - type: input
+    id: browser
+    attributes:
+      label: Browser / OS
+      placeholder: "Chrome 137 / macOS 15.4"
