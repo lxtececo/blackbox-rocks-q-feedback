@@ -23,17 +23,19 @@ compute backends.
 
 ## In-app alternative
 
-Every page of the app at
+Every signed-in page of the app at
 [`quantumfpo.staging.blackbox.rocks`](https://quantumfpo.staging.blackbox.rocks)
-and (soon) `app.quantumfpo.com` has a **Send feedback** button in the footer.
-It posts directly into our triage queue — no GitHub account needed.
+has a **Send feedback** button in the footer. It opens a small modal
+that posts directly into our triage queue — no GitHub account needed.
+The button only appears after you have signed in (the public landing
+at [blackbox.rocks](https://blackbox.rocks) is anonymous, so use one of
+the channels above from there).
 
 ## Resources
 
 - **Product**: [BLACKBOX.ROCKS |ψ⟩ Q — Quantum Full Platform Optimizer](https://blackbox.rocks)
 - **User guide & API docs**: [quantumfpo.staging.blackbox.rocks/docs/intro](https://quantumfpo.staging.blackbox.rocks/docs/intro)
-- **Release notes**: [quantumfpo.staging.blackbox.rocks/docs/release-notes](https://quantumfpo.staging.blackbox.rocks/docs/release-notes)
-- **Roadmap**: [quantumfpo.staging.blackbox.rocks/docs/roadmap](https://quantumfpo.staging.blackbox.rocks/docs/roadmap)
+- **Release notes**: [quantumfpo.staging.blackbox.rocks/docs/release-notes/v0.2.1-alpha](https://quantumfpo.staging.blackbox.rocks/docs/release-notes/v0.2.1-alpha)
 - **Company**: [BLACKBOX.ROCKS](https://blackbox.rocks)
 
 ## Triage SLA
